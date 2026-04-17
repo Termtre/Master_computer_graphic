@@ -6,7 +6,7 @@ vcpkg/installed/
 *vcpkg_installed*
 3rds/
 build/
-vcpkg*
+*/vcpkg/
 *.o
 *.exe
 *.so
