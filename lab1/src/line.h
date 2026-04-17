@@ -1,6 +1,6 @@
 #pragma once
 
-#include <GL/gl.h>
+#include <GL/freeglut.h>
 #include <glm/glm.hpp>
 #include "vertex.h"
 

@@ -9,6 +9,7 @@
 #include "camera.h"
 #include "polygon.h"
 #include "column.h"
+#include <clocale>
 
 namespace colorPalette
 {
@@ -102,10 +103,14 @@ void clearColor(const glm::vec4& color)
 
 int main(int argc, char** argv)
 {
+    setlocale(LC_ALL, "Russian");
+
     glutInit(&argc, argv);
+    glutInitContextVersion(2, 1);
+    glutInitContextProfile(GLUT_COMPATIBILITY_PROFILE);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
     glutInitWindowSize(1000, 800);
-    glutCreateWindow("Fomichev Dmitriy 3825М1ПМфм1 lab1");
+    glutCreateWindow("Fomichev Dmitriy lab1");
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
     clearColor(colorPalette::PINKGREY);

@@ -1,2 +1,14 @@
 cmake-build-*/
 .vscode
+vcpkg/downloads/
+vcpkg/packages/
+vcpkg/installed/
+*vcpkg_installed*
+3rds/
+build/
+vcpkg*
+*.o
+*.exe
+*.so
+*.dll
+*.dylib
